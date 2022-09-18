@@ -4,12 +4,11 @@ import checker from 'vite-plugin-checker';
 import eslintPlugin from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(() => ({
   plugins: [react(), checker({ typescript: true }), eslintPlugin()],
-  // @ts-ignore
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: './setupTest.ts',
   },
-});
+}));

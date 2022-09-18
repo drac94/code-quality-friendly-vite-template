@@ -4,7 +4,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jest-dom/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "settings": {
     "react": {
