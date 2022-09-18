@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "coverage": "vitest run --coverage",
     "preview": "vite preview",
     "format": "prettier --write './**/*.{js,md,ts,tsx,jsx}'",
     "lint": "eslint --cache --fix --ext './**/*.{js,ts,tsx,jsx}' --format=pretty ./",
     "test": "vitest",
+    "test:ci": "vitest run",
+    "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
     "prepare": "husky install"
   },
