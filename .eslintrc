@@ -25,6 +25,13 @@
   },
   "plugins": ["import", "prettier"],
   "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-unused-vars": "off",
     "import/order": [
       "error",
       {
