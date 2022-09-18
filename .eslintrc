@@ -76,6 +76,15 @@
         }
       }
     ],
+    "prefer-arrow-functions/prefer-arrow-functions": [
+      "error",
+      {
+        "classPropertiesAllowed": false,
+        "disallowPrototype": false,
+        "returnStyle": "unchanged",
+        "singleReturnOnly": false
+      }
+    ],
     "curly": "error"
   }
 }
