@@ -23,8 +23,10 @@
     "amd": true,
     "node": true
   },
-  "plugins": ["import", "prettier"],
+  "plugins": ["import", "prettier", "react-hooks"],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/no-unused-vars": [
       "error",
