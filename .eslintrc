@@ -23,7 +23,13 @@
     "amd": true,
     "node": true
   },
-  "plugins": ["import", "prettier", "react-hooks"],
+  "plugins": [
+    "import",
+    "prettier",
+    "@typescript-eslint",
+    "prefer-arrow-functions",
+    "react-hooks"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -35,6 +41,8 @@
       }
     ],
     "no-unused-vars": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "import/order": [
       "error",
       {
