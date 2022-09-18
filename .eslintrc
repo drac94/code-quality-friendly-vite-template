@@ -39,8 +39,15 @@
         "pathGroups": [
           {
             "pattern": "react",
-            "group": "external",
-            "position": "before"
+            "group": "builtin"
+          },
+          {
+            "pattern": "react-dom",
+            "group": "builtin"
+          },
+          {
+            "pattern": "~/**",
+            "group": "internal"
           }
         ],
         "pathGroupsExcludedImportTypes": ["builtin"],
